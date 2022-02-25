@@ -17,6 +17,9 @@ public class MemberController {
 
     private final MemberService memberService;
 
+    /**
+     * 회원 가입
+     */
     @PostMapping("/members/new")
     public String create(@RequestParam("name") String name,
                          @RequestParam("email") String email,
@@ -31,10 +34,14 @@ public class MemberController {
 
     }
 
+    /**
+     * 회원 내역 조회
+     */
     @GetMapping("members")
     public String list(Model model){
         List<Member> members = memberService.findMembers();
         model.addAttribute("members", members);
+        //model객체 안에 members라는 attributeName으로 members전달
         return "/members/memberList";
         //model객체를 아래 String url에 전달한다.
     }
