@@ -1,2 +1,6 @@
-# SpringBoot_JPA_Mini_Proj
-The website that sell cars.
+# Car Salse Site
+
+### 기능
+##### 1. 회원 관리 (회원가입, 회원_조회)
+##### 2. 자동차 관리 (자동차_등록, 자동차_정보수정, 자동차_조회)
+##### 3. 주문 관리 (자동차_주문, 자동차_주문취소, 자동차_주문조회
